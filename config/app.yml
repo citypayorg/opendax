@@ -1,10 +1,10 @@
 app:
-  name: "OpenDAX-LT"
-  domain: "app.local"
-  subdomain: "www"
+  name: "c4ei.net"
+  domain: "c4ei.net"
+  subdomain: "https://trade"
 ssl:
-  enabled: false    # Make sure to enable during deployment
-  email: "support@example.com"
+  enabled: true    # Make sure to enable during deployment
+  email: "c4ei.net@gmail.com"
 license:
   url: "https://www.openware.com/api/v2/tenko"
   key: "PASTE-KEY-HERE"
@@ -12,6 +12,7 @@ images:
   peatio: rubykube/peatio:2.3.43
   barong: rubykube/barong:2.3.36
   frontend: docker.pkg.github.com/mobidax/opendax/baseapp:2.3.27
+  # frontend: frontend/baseapp:2.3.27
   tower: quay.io/openware/tower:2.3.138
   postmaster: quay.io/openware/postmaster:2.3.4
 rabbitmq:

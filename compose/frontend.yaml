@@ -1,0 +1,21 @@
+version: '3.6'
+
+services:
+  frontend:
+    image: "docker.pkg.github.com/mobidax/opendax/baseapp:2.3.27"
+    volumes:
+      - ../config/frontend/env.js:/usr/share/nginx/html/config/env.js
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: "PathPrefix:/;Host:https://trade.c4ei.net"
+      traefik.port: 3000
+
+  tower:
+    image: "quay.io/openware/tower:2.3.138"
+    volumes:
+      - ../config/frontend/tower.js:/home/app/env.js
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: "PathPrefix:/tower;Host:https://trade.c4ei.net"
+      traefik.port: 8080
+
