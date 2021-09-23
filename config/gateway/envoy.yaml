@@ -18,7 +18,7 @@ static_resources:
               - "*"
               cors:
                 allow_origin:
-                - "https://https://trade.c4ei.net"
+                - "https://trade.c4ei.net"
                 allow_methods: "PUT, GET, POST"
                 allow_headers: "content-type, x-grpc-web"
                 filter_enabled:
