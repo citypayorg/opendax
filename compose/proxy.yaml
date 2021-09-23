@@ -13,7 +13,6 @@ services:
     networks:
       default:
         aliases:
-          - www.app.local
           - trade.c4ei.net
           - peatio.c4ei.net
           - ws.ranger.c4ei.net

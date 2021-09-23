@@ -7,7 +7,7 @@ services:
       - ../config/frontend/env.js:/usr/share/nginx/html/config/env.js
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/;Host:www.app.local"
+      traefik.frontend.rule: "PathPrefix:/;Host:trade.c4ei.net"
       traefik.port: 3000
 
   tower:
@@ -16,6 +16,6 @@ services:
       - ../config/frontend/tower.js:/home/app/env.js
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/tower;Host:www.app.local"
+      traefik.frontend.rule: "PathPrefix:/tower;Host:trade.c4ei.net"
       traefik.port: 8080
 

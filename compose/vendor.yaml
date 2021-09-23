@@ -15,5 +15,5 @@ services:
         yarn start
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/;Host:www.app.local"
+      traefik.frontend.rule: "PathPrefix:/;Host:trade.c4ei.net"
       traefik.port: 3000

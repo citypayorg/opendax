@@ -3,7 +3,7 @@ app:
   domain: "c4ei.net"
   subdomain: "trade"
 ssl:
-  enabled: false    # Make sure to enable during deployment
+  enabled: true    # Make sure to enable during deployment
   email: "c4ei.net@gmail.com"
 license:
   url: "https://www.openware.com/api/v2/tenko"
